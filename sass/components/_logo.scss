@@ -1,0 +1,27 @@
+.logo {
+  text-decoration: none;
+  font-family: $font-second;
+  @media screen and (max-width: 1199px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
+  letter-spacing: 0.03em;
+}
+
+.logo__left-part {
+  color: $color-brand;
+}
+
+.logo__right-part--dark {
+  color: $color-black;
+}
+
+.logo__right-part--light {
+  color: $color-white;
+}

@@ -1,0 +1,33 @@
+.hero-background {
+  background-color: $color-hero;
+}
+
+.hero {  
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+  background-image: $gradient-hero, url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  text-align: center;
+  color: $color-white;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: $gradient-hero, url(../images/bg@2x.jpg);
+  }
+}
+
+.hero-button {
+  @extend %button;
+  padding: 10px 32px;
+}

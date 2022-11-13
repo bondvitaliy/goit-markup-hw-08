@@ -1,0 +1,33 @@
+.services {
+  padding-top: 0;
+ @media screen and (max-width: 1199px) {
+    display: none;  
+  } 
+}
+
+.services-list {
+  @extend %list;
+  gap: 30px;
+}
+
+.services-card {
+  position: relative;
+}
+
+.services-card__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-title-services;
+}
